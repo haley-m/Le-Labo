@@ -1,0 +1,102 @@
+header, section, footer {
+  width: 100%;
+}
+
+a>img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.4s;
+}
+
+header a>img:hover, .section_4 a>img:hover, .section_6 a>img:hover, .section_7 a>img:hover, footer a>img:hover {
+  transform: scale(1);
+}
+
+
+a {
+  overflow: hidden;
+}
+
+.discover_btn:hover {
+  border: 0;
+  background-color: #000;
+    transition-duration: 0.4s;
+}
+
+.discover_btn>a:hover {
+  color: #fff;
+}
+
+.explore_btn:hover {
+  border: 0;
+  background-color: #000;
+  transition-duration: 0.4s;
+}
+
+.explore_btn>a:hover {
+  color: #fff;
+}
+
+/* .subscribe_btn:hover>a {
+  transform: translateY(3px);
+} */
+
+
+
+
+
+/* Source for underline animation when hover:
+https://wpshout.com/snippets/animated-underline-on-hover-with-css/#gref */
+
+.product_con .text_box a, .product_con .text_box a:link, .product_con .text_box a:visited {
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px; /* The distance between text and underline */
+}
+
+.product_con .text_box a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(90deg, #000, #000); /* underline color */
+  background-size: 0 2px; /* vertical size of underline */
+  background-repeat: no-repeat;
+  background-position: left bottom; /* start position of underline */
+  transition: background-size .3s ease-in; /* duration and timing style of animation */
+}
+
+.product_con .text_box a:hover::before {
+  background-size: 100% 2px;
+}
+/* section_3 underline animation end  */
+
+
+
+
+
+.category_con p>a, .category_con p>a:link, .category_con p>a:visited {
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px; /* The distance between text and underline */
+}
+
+.category_con p>a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(90deg, #000, #000); /* underline color */
+  background-size: 0 2px; /* vertical size of underline */
+  background-repeat: no-repeat;
+  background-position: left bottom; /* start position of underline */
+  transition: background-size .3s ease-in; /* duration and timing style of animation */
+}
+
+.category_con p>a:hover::before {
+  background-size: 100% 2px;
+}
+/* section_5 underline animation end  */
